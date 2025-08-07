@@ -21,7 +21,7 @@ const SkillsSection = () => {
     <section id="skills" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-hero-gradient bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
             My Skills
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -29,7 +29,7 @@ const SkillsSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {skillCategories.map((category, index) => (
             <Card 
               key={category.category} 

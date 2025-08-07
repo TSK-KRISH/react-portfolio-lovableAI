@@ -114,7 +114,7 @@ const ProjectsSection = () => {
         </div>
 
         <Tabs defaultValue="self" className="w-full">
-          <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-12">
+          <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-12 p-1">
             <TabsTrigger value="self" className="text-base">Self Projects</TabsTrigger>
             <TabsTrigger value="academic" className="text-base">Academic Projects</TabsTrigger>
           </TabsList>
