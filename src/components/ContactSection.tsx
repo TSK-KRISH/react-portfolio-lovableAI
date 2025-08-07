@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Github, Linkedin, Mail, Twitter, Instagram, Globe } from "lucide-react";
+import { Github, Linkedin, Mail, Globe } from "lucide-react";
 
 const ContactSection = () => {
   const socialLinks = [
@@ -23,22 +23,10 @@ const ContactSection = () => {
       description: "Send me a message"
     },
     {
-      name: "Twitter",
-      icon: Twitter,
-      url: "https://twitter.com/yourusername",
-      description: "Follow me for tech updates"
-    },
-    {
-      name: "Instagram",
-      icon: Instagram,
-      url: "https://instagram.com/yourusername",
-      description: "See my creative side"
-    },
-    {
-      name: "Portfolio",
+      name: "Medium",
       icon: Globe,
-      url: "https://yourwebsite.com",
-      description: "Visit my personal website"
+      url: "https://medium.com/@yourusername",
+      description: "Read my articles and insights"
     }
   ];
 

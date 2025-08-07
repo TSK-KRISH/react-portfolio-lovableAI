@@ -13,18 +13,12 @@ const HeroSection = () => {
   return (
     <section 
       id="home" 
-      className="min-h-screen flex items-center justify-center relative overflow-hidden"
-      style={{
-        backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url(${heroImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
-      }}
+      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-background"
     >
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-hero-gradient bg-clip-text text-transparent animate-in slide-in-from-bottom duration-1000">
-            Hi, I'm [Your Name]
+            Hi, I'm Sree Krishnan
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-in slide-in-from-bottom duration-1000 delay-200">
@@ -36,7 +30,7 @@ const HeroSection = () => {
             Passionate about clean code, innovative solutions, and continuous learning.
           </p>
           
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-in slide-in-from-bottom duration-1000 delay-500">
+          <div className="flex items-center justify-center mb-16 animate-in slide-in-from-bottom duration-1000 delay-500">
             <Button 
               size="lg" 
               onClick={scrollToProjects}
@@ -44,18 +38,6 @@ const HeroSection = () => {
             >
               View My Work
             </Button>
-            
-            <div className="flex items-center gap-4">
-              <Button variant="outline" size="icon" className="border-primary/20 hover:border-primary hover:shadow-glow transition-all duration-300">
-                <Github className="h-5 w-5" />
-              </Button>
-              <Button variant="outline" size="icon" className="border-primary/20 hover:border-primary hover:shadow-glow transition-all duration-300">
-                <Linkedin className="h-5 w-5" />
-              </Button>
-              <Button variant="outline" size="icon" className="border-primary/20 hover:border-primary hover:shadow-glow transition-all duration-300">
-                <Mail className="h-5 w-5" />
-              </Button>
-            </div>
           </div>
           
           <div className="animate-bounce">
