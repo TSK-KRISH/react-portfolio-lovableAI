@@ -22,7 +22,7 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-in slide-in-from-bottom duration-1000 delay-200">
-            System Engineer & Creative Problem Solver
+            System Engineer
           </p>
           
           <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto animate-in slide-in-from-bottom duration-1000 delay-300">
