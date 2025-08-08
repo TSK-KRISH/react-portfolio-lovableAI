@@ -8,25 +8,17 @@ import { ExternalLink, Github } from "lucide-react";
 const ProjectsSection = () => {
   const selfProjects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Tailwind CSS"],
-      liveLink: "#",
-      githubLink: "#",
-      featured: true
-    },
-    {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, team features, and project tracking capabilities.",
-      technologies: ["Vue.js", "Firebase", "TypeScript", "Vuetify"],
+      title: "Human tweets sentiment predicter",
+      description: "A machine learning model that categorizes human tweets as Positive, Negative, or Neutral using Logistic Regression with 84.53% accuracy.",
+      technologies: ["Python", "Anaconda", "scikit-learn"],
       liveLink: "#",
       githubLink: "#",
       featured: false
     },
     {
-      title: "Weather Dashboard",
-      description: "A responsive weather application with location-based forecasts, interactive maps, and weather alerts.",
-      technologies: ["React", "OpenWeather API", "Chart.js", "CSS3"],
+      title: "Personal Portfolio website",
+      description: "A React portfolio website with my professional details. You're viewing it currently.",
+      technologies: ["Vite", "TypeScript", "React", "shadcn-ui", "Tailwind CSS"],
       liveLink: "#",
       githubLink: "#",
       featured: false
@@ -35,25 +27,25 @@ const ProjectsSection = () => {
 
   const academicProjects = [
     {
-      title: "Machine Learning Classifier",
-      description: "Developed a classification model for predicting student performance using various ML algorithms and data preprocessing techniques.",
-      technologies: ["Python", "Scikit-learn", "Pandas", "Matplotlib", "Jupyter"],
-      liveLink: "#",
-      githubLink: "#",
-      featured: true
-    },
-    {
-      title: "Database Management System",
-      description: "Designed and implemented a library management system with advanced SQL queries, stored procedures, and data normalization.",
-      technologies: ["MySQL", "PHP", "HTML", "CSS", "JavaScript"],
+      title: "CollegeFair - College Event organizer application",
+      description: "A simple Java application that allows students and colleges to register and organize 5+ different categories of events.",
+      technologies: ["Java", "MySQL"],
       liveLink: "#",
       githubLink: "#",
       featured: false
     },
     {
-      title: "Mobile App Development",
-      description: "Created a cross-platform mobile application for campus navigation with real-time location tracking and interactive maps.",
-      technologies: ["React Native", "Expo", "Google Maps API", "AsyncStorage"],
+      title: "GymWale - Gym management application",
+      description: "A simple Java application that provides features like managing gym memberships and scheduling workouts.",
+      technologies: ["Java", "Oracle"],
+      liveLink: "#",
+      githubLink: "#",
+      featured: false
+    },
+    {
+      title: "Swiggito - Online Food ordering application",
+      description: "A full-stack application built with Angular and MySQL that includes features similar to Swiggy or Zomato.",
+      technologies: ["Angular", "PHP", "MySQL", "XAMPP"],
       liveLink: "#",
       githubLink: "#",
       featured: false
@@ -105,7 +97,7 @@ const ProjectsSection = () => {
     <section id="projects" className="py-20 bg-secondary/20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-hero-gradient bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
             My Projects
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -114,7 +106,7 @@ const ProjectsSection = () => {
         </div>
 
         <Tabs defaultValue="self" className="w-full">
-          <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-12 p-1">
+          <TabsList className="w-full max-w-md mx-auto mb-12 p-1.5 rounded-lg bg-muted border border-border flex gap-1">
             <TabsTrigger value="self" className="text-base">Self Projects</TabsTrigger>
             <TabsTrigger value="academic" className="text-base">Academic Projects</TabsTrigger>
           </TabsList>

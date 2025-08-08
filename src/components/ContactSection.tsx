@@ -7,25 +7,25 @@ const ContactSection = () => {
     {
       name: "GitHub",
       icon: Github,
-      url: "https://github.com/yourusername",
+      url: "https://github.com/TSK-KRISH?tab=overview&from=2025-08-01&to=2025-08-07",
       description: "Check out my code and projects"
     },
     {
       name: "LinkedIn",
       icon: Linkedin,
-      url: "https://linkedin.com/in/yourprofile",
+      url: "https://www.linkedin.com/in/sree-krishnan-t/",
       description: "Let's connect professionally"
     },
     {
       name: "Email",
       icon: Mail,
-      url: "mailto:your.email@example.com",
+      url: "mailto:myselfsreekrishnan@gmail.com",
       description: "Send me a message"
     },
     {
       name: "Medium",
       icon: Globe,
-      url: "https://medium.com/@yourusername",
+      url: "https://medium.com/@sreekrishnan",
       description: "Read my articles and insights"
     }
   ];

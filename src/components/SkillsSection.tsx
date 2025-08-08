@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 const SkillsSection = () => {
   const skillCategories = [
     {
-      category: "Data Science",
+      category: "Data Engineering",
       skills: ["SQL", "Python", "PySpark", "Azure Data Factory"]
     },
     {
@@ -13,7 +13,7 @@ const SkillsSection = () => {
     },
     {
       category: "Frontend Development",
-      skills: ["Angular"]
+      skills: ["Angular", "HTML", "CSS", "TypeScript"]
     }
   ];
 
