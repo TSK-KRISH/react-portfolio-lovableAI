@@ -26,7 +26,7 @@ const Background = () => {
     // Colors based on design tokens
     const lineColor = `hsl(${primary} / 0.18)`; // subtle green
     const dotColor = `hsl(${primary} / 0.35)`;
-    const trailBg = `hsla(${bg} / 0.4)`;
+    const trailBg = `hsl(${bg} / 0.4)`;
 
     // Init particles
     const particleCount = Math.min(120, Math.floor((window.innerWidth * window.innerHeight) / 16000));
@@ -132,7 +132,7 @@ const Background = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed inset-0 -z-10 pointer-events-none"
+      className="fixed inset-0 z-0 pointer-events-none"
       aria-hidden="true"
     />
   );
