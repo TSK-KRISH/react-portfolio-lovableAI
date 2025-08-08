@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ExternalLink, Github } from "lucide-react";
+import { Github } from "lucide-react";
 
 const ProjectsSection = () => {
   const selfProjects = [
@@ -12,7 +12,7 @@ const ProjectsSection = () => {
       description: "A machine learning model that categorizes human tweets as Positive, Negative, or Neutral using Logistic Regression with 84.53% accuracy.",
       technologies: ["Python", "Anaconda", "scikit-learn"],
       liveLink: "#",
-      githubLink: "#",
+      githubLink: "https://github.com/TSK-KRISH/Sentiment-analysis-of-text-using-ML",
       featured: false
     },
     {
@@ -20,7 +20,7 @@ const ProjectsSection = () => {
       description: "A React portfolio website with my professional details. You're viewing it currently.",
       technologies: ["Vite", "TypeScript", "React", "shadcn-ui", "Tailwind CSS"],
       liveLink: "#",
-      githubLink: "#",
+      githubLink: "https://github.com/TSK-KRISH/react-portfolio-lovableAI",
       featured: false
     }
   ];
@@ -31,7 +31,7 @@ const ProjectsSection = () => {
       description: "A simple Java application that allows students and colleges to register and organize 5+ different categories of events.",
       technologies: ["Java", "MySQL"],
       liveLink: "#",
-      githubLink: "#",
+      githubLink: "https://github.com/TSK-KRISH/College-Event-Organization-System",
       featured: false
     },
     {
@@ -39,7 +39,7 @@ const ProjectsSection = () => {
       description: "A simple Java application that provides features like managing gym memberships and scheduling workouts.",
       technologies: ["Java", "Oracle"],
       liveLink: "#",
-      githubLink: "#",
+      githubLink: "https://github.com/TSK-KRISH/Gym-Management-System",
       featured: false
     },
     {
@@ -47,7 +47,7 @@ const ProjectsSection = () => {
       description: "A full-stack application built with Angular and MySQL that includes features similar to Swiggy or Zomato.",
       technologies: ["Angular", "PHP", "MySQL", "XAMPP"],
       liveLink: "#",
-      githubLink: "#",
+      githubLink: "https://github.com/TSK-KRISH/FOOD-ORDERING-SYSTEM",
       featured: false
     }
   ];
@@ -65,11 +65,10 @@ const ProjectsSection = () => {
             </CardTitle>
           </div>
           <div className="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <Button variant="outline" size="icon" className="h-8 w-8 border-primary/20 hover:border-primary">
-              <ExternalLink className="h-4 w-4" />
-            </Button>
-            <Button variant="outline" size="icon" className="h-8 w-8 border-primary/20 hover:border-primary">
-              <Github className="h-4 w-4" />
+            <Button asChild variant="outline" size="icon" className="h-8 w-8 border-primary/20 hover:border-primary">
+              <a href={project.githubLink} target="_blank" rel="noopener noreferrer" aria-label={`${project.title} GitHub repository`}>
+                <Github className="h-4 w-4" />
+              </a>
             </Button>
           </div>
         </div>

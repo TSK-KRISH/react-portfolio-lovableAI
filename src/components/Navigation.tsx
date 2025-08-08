@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import { Hexagon } from "lucide-react";
 
 const Navigation = () => {
   const [activeSection, setActiveSection] = useState("home");
@@ -44,8 +45,8 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold bg-hero-gradient bg-clip-text text-transparent">
-            Portfolio
+          <div className="flex items-center">
+            <Hexagon className="h-8 w-8 text-primary" aria-label="Logo" />
           </div>
           
           <div className="hidden md:flex items-center space-x-1">
