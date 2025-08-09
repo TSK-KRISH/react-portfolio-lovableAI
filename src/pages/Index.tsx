@@ -8,7 +8,7 @@ import Background from "@/components/Background";
 
 const Index = () => {
   return (
-    <div className="relative min-h-screen bg-background">
+    <div className="relative min-h-screen bg-transparent">
       <Background />
       <div className="relative z-10">
         <Navigation />
