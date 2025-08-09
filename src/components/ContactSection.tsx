@@ -47,26 +47,33 @@ const ContactSection = () => {
           {socialLinks.map((link, index) => {
             const IconComponent = link.icon;
             return (
-              <Card 
-                key={link.name}
-                className="bg-card-gradient border-border/50 hover:shadow-elegant transition-all duration-500 hover:scale-105 group cursor-pointer"
-                style={{ animationDelay: `${index * 0.1}s` }}
-                onClick={() => window.open(link.url, '_blank')}
+              <a
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${link.name} - ${link.description}`}
+                className="block"
               >
-                <CardContent className="p-6 text-center">
-                  <div className="mb-4 flex justify-center">
-                    <div className="p-4 rounded-full bg-primary/10 group-hover:bg-primary group-hover:shadow-glow transition-all duration-300">
-                      <IconComponent className="h-8 w-8 text-primary group-hover:text-primary-foreground transition-colors duration-300" />
+                <Card 
+                  key={link.name}
+                  className="bg-card-gradient border-border/50 hover:shadow-elegant transition-all duration-500 hover:scale-105 group cursor-pointer"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <CardContent className="p-6 text-center">
+                    <div className="mb-4 flex justify-center">
+                      <div className="p-4 rounded-full bg-primary/10 group-hover:bg-primary group-hover:shadow-glow transition-all duration-300">
+                        <IconComponent className="h-8 w-8 text-primary group-hover:text-primary-foreground transition-colors duration-300" />
+                      </div>
                     </div>
-                  </div>
-                  <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors duration-300">
-                    {link.name}
-                  </h3>
-                  <p className="text-muted-foreground text-sm group-hover:text-foreground transition-colors duration-300">
-                    {link.description}
-                  </p>
-                </CardContent>
-              </Card>
+                    <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors duration-300">
+                      {link.name}
+                    </h3>
+                    <p className="text-muted-foreground text-sm group-hover:text-foreground transition-colors duration-300">
+                      {link.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              </a>
             );
           })}
         </div>

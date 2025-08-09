@@ -70,6 +70,13 @@ const ChartStyle = ({ id, config }: { id: string; config: ChartConfig }) => {
     ([_, config]) => config.theme || config.color
   )
 
+  // Basic sanitizer to prevent CSS injection in <style> by restricting characters
+  const sanitizeColor = (value?: string) => {
+    if (!value) return undefined
+    const cleaned = value.replace(/[^#(),.%\s\dA-Za-z-]/g, "").trim()
+    return cleaned ? cleaned.slice(0, 64) : undefined
+  }
+
   if (!colorConfig.length) {
     return null
   }
@@ -86,7 +93,8 @@ ${colorConfig
     const color =
       itemConfig.theme?.[theme as keyof typeof itemConfig.theme] ||
       itemConfig.color
-    return color ? `  --color-${key}: ${color};` : null
+    const safe = sanitizeColor(color)
+    return safe ? `  --color-${key}: ${safe};` : null
   })
   .join("\n")}
 }
