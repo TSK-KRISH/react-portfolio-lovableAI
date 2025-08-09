@@ -105,9 +105,9 @@ const ProjectsSection = () => {
         </div>
 
         <Tabs defaultValue="self" className="w-full">
-          <TabsList className="inline-flex mx-auto mb-12 p-1 rounded-lg bg-muted border border-border gap-1">
-            <TabsTrigger value="self" className="text-base">Self Projects</TabsTrigger>
-            <TabsTrigger value="academic" className="text-base">Academic Projects</TabsTrigger>
+          <TabsList className="inline-flex mx-auto mb-8 p-0.5 rounded-md bg-muted border border-border gap-1">
+            <TabsTrigger value="self" className="px-3 py-1.5 text-sm sm:text-base">Self Projects</TabsTrigger>
+            <TabsTrigger value="academic" className="px-3 py-1.5 text-sm sm:text-base">Academic Projects</TabsTrigger>
           </TabsList>
           
           <TabsContent value="self" className="space-y-8">

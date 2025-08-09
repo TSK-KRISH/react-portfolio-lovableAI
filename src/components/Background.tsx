@@ -25,11 +25,11 @@ const Background = () => {
 
     // Colors based on design tokens
     const lineColor = `hsl(${primary} / 0.18)`; // subtle green
-    const dotColor = `hsl(${primary} / 0.35)`;
-    const trailBg = `hsl(${bg} / 0.4)`;
+    const dotColor = `hsl(${primary} / 0.55)`;
+    const trailBg = `hsl(${bg} / 0.25)`;
 
     // Init particles
-    const particleCount = Math.min(120, Math.floor((window.innerWidth * window.innerHeight) / 16000));
+    const particleCount = Math.min(160, Math.floor((window.innerWidth * window.innerHeight) / 12000));
     particlesRef.current = Array.from({ length: particleCount }, () => ({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
@@ -37,7 +37,7 @@ const Background = () => {
       vy: (Math.random() - 0.5) * 0.3,
     }));
 
-    const maxDist = 120;
+    const maxDist = 160;
 
     const onMouseMove = (e: MouseEvent) => {
       mouseRef.current = { x: e.clientX, y: e.clientY };
@@ -95,7 +95,7 @@ const Background = () => {
           const dist = Math.hypot(dx, dy);
           if (dist < maxDist) {
             const alpha = 1 - dist / maxDist;
-            ctx.strokeStyle = `hsl(${primary} / ${0.15 * alpha})`;
+            ctx.strokeStyle = `hsl(${primary} / ${0.28 * alpha})`;
             ctx.beginPath();
             ctx.moveTo(a.x, a.y);
             ctx.lineTo(b.x, b.y);
@@ -108,7 +108,7 @@ const Background = () => {
       ctx.fillStyle = dotColor;
       for (const p of particlesRef.current) {
         ctx.beginPath();
-        ctx.arc(p.x, p.y, 1.2, 0, Math.PI * 2);
+        ctx.arc(p.x, p.y, 1.5, 0, Math.PI * 2);
         ctx.fill();
       }
 
@@ -132,7 +132,7 @@ const Background = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed inset-0 z-0 pointer-events-none"
+      className="fixed inset-0 -z-10 pointer-events-none"
       aria-hidden="true"
     />
   );
