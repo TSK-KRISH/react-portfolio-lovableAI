@@ -105,10 +105,12 @@ const ProjectsSection = () => {
         </div>
 
         <Tabs defaultValue="self" className="w-full">
-          <TabsList className="inline-flex mx-auto mb-8 p-0.5 rounded-md bg-muted border border-border gap-1">
-            <TabsTrigger value="self" className="px-3 py-1.5 text-sm sm:text-base">Self Projects</TabsTrigger>
-            <TabsTrigger value="academic" className="px-3 py-1.5 text-sm sm:text-base">Academic Projects</TabsTrigger>
-          </TabsList>
+          <div className="w-full flex justify-center mb-8">
+            <TabsList className="inline-flex p-0.5 rounded-md bg-muted/70 backdrop-blur-sm border border-border gap-1">
+              <TabsTrigger value="self" className="px-3 py-1.5 text-sm sm:text-base">Self Projects</TabsTrigger>
+              <TabsTrigger value="academic" className="px-3 py-1.5 text-sm sm:text-base">Academic Projects</TabsTrigger>
+            </TabsList>
+          </div>
           
           <TabsContent value="self" className="space-y-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
