@@ -23,11 +23,11 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-in slide-in-from-bottom duration-1000 delay-200">
-            System Engineer
+            Data Engineer
           </p>
           
           <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto animate-in slide-in-from-bottom duration-1000 delay-300">
-            Currently getting trained on Data Engineering at TCS and working on AI in my freetime. 
+            Working as a Data Engineer at TCS and working on AI in my freetime. 
             Previously worked as a Frontend Angular Developer at Profit Apps. 
             Passionate about clean code, innovative solutions, and continuous learning.
           </p>

@@ -6,7 +6,7 @@ const SkillsSection = () => {
   const skillCategories = [
     {
       category: "Data Engineering",
-      skills: ["SQL", "Python", "PySpark", "Azure Data Factory"]
+      skills: ["SQL", "Python", "PySpark", "Azure Data Factory", "Databricks"]
     },
     {
       category: "AI", 

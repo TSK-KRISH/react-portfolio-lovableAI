@@ -8,6 +8,14 @@ import { Github } from "lucide-react";
 const ProjectsSection = () => {
   const selfProjects = [
     {
+      title: "Myth Buster",
+      description: "An Angular application with Java backend that uses the Gemini AI model to verify whether user-entered statements are myths or facts, providing detailed explanations.",
+      technologies: ["Angular", "Java", "MySQL", "Gemini API"],
+      liveLink: "#",
+      githubLink: "#",
+      featured: false
+    },
+    {
       title: "Human tweets sentiment predicter",
       description: "A machine learning model that categorizes human tweets as Positive, Negative, or Neutral using Logistic Regression with 84.53% accuracy.",
       technologies: ["Python", "Anaconda", "scikit-learn"],
