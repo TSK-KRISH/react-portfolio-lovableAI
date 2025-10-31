@@ -8,11 +8,11 @@ import { Github } from "lucide-react";
 const ProjectsSection = () => {
   const selfProjects = [
     {
-      title: "Myth Buster",
+      title: "AI Myth Buster",
       description: "An Angular application with Java backend that uses the Gemini AI model to verify whether user-entered statements are myths or facts, providing detailed explanations.",
       technologies: ["Angular", "Java", "MySQL", "Gemini API"],
       liveLink: "#",
-      githubLink: "#",
+      githubLink: "https://github.com/RATHESH-03/mythBuster#",
       featured: false
     },
     {
